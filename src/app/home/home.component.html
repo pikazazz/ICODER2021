@@ -1,0 +1,15 @@
+<app-action-bar  [(number)]="actionBarNumber1" (numberChange)="actionBarNumber1 = $event;sumResult()" [notBelow]="0" [notMore]="100" [step]="1" ></app-action-bar>
+<br>
+<app-action-bar  [(number)]="actionBarNumber2" (numberChange)="actionBarNumber2 = $event;sumResult()" [notBelow]="-10" [notMore]="200" [step]="10" ></app-action-bar>
+<br>
+<app-action-bar  [(number)]="actionBarNumber3" (numberChange)="actionBarNumber3 = $event;sumResult()" [notBelow]="-100"  [notMore]="400" [step]="100" ></app-action-bar>
+<br>
+<div>
+   ผลรวม {{result}}
+</div>
+<br>
+
+<!-- <button pButton type="button"   (click)="actionBarNumber1 = 100;sumResult()" class="p-button-success">ChangeActionNumber1</button>
+<button pButton type="button"   (click)="actionBarNumber2 = 200;sumResult()" class="p-button-success">ChangeActionNumber2</button>
+<button pButton type="button"   (click)="actionBarNumber3 = 400;sumResult()" class="p-button-success">ChangeActionNumber3</button>
+ -->

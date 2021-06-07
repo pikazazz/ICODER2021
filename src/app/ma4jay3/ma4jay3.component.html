@@ -1,0 +1,15 @@
+
+<hr>
+<span>มา 4 จ่าย 3</span>
+<br>
+<div>
+  <!-- templateRef -->
+  <input #priceOne  value=""  type="text" placeholder="ราคา">
+</div>
+<div>
+  <button (click)="priceCal(priceOne.value)">คำนวณ </button>
+</div>
+
+<div>
+  <span>จ่ายคนละ  {{total}}  ฿</span>
+</div>
